@@ -1,20 +1,5 @@
-/**
- * 
- * Given an integer n, return a counter function. This counter function initially returns n and then returns 1 more than the previous value every subsequent time it is called (n, n + 1, n + 2, etc).
-
- 
-
-
-
-Constraints:
-
--1000 <= n <= 1000
-0 <= calls.length <= 1000
-calls[i] === "call"
-* 
-*/
-
-// Ans:
+//  Given an integer n, return a counter function. This counter function initially returns n and then returns 1 more than the previous value every subsequent time it is called (n, n + 1, n + 2, etc).
+//! Ans:
 
 var createCounter = function (n) {
   return function () {
@@ -28,7 +13,7 @@ var createCounter = function (n) {
 // n = 10 
 // ["call","call","call"]
 // Output: [10,11,12]
-// Explanation: 
+// Explanation:
 // const counter = createCounter(10)
 console.log(counter()) = 10 // The first time counter() is called, it returns n.
 console.log(counter()) = 11 // Returns 1 more than the previous time.
